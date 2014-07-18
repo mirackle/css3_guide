@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>ID和类选择符:类属性-'标签.类'选择符</title>
+    <title>ID和类选择符:多类选择符</title>
   </head>
   <style type="text/css">
+    .featured { color: blue;}
     p { font-family: helvetica, sans-serif; font-size: 1.2em; }
     .specialtext { font-style: italic; }
     p.specialtext { color: red; }
@@ -12,10 +13,12 @@
     /* CSS样式规则是有继承关系的: 选择符可以是复合的, 这些复合的标签、类等，会将原来已经声明过的规则添加进来 。
        当然，最新的声明会覆盖以前的声明。
     */
+    .specialtext.featured { font-size: 120%; }
   </style>
   <body>
     <h1 class="specialtext">This is a heading with the <span>same class</span> as the second paragraph.</h1> 
     <p>This tag has no class.</p>
     <p class="specialtext"> When a tag has a class attribute, you can target it <span>regardless</span> of its position in the hierarchy. </p>
+    <p class="featured specialtext">Here the span tag <span>may or may not</span> be styled.</p>
   </body>
 </html>
