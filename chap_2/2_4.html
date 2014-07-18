@@ -2,9 +2,17 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>ID和类选择符</title>
+    <title>ID和类选择符:类属性-类选择符</title>
   </head>
+  <style type="text/css">
+    p { font-family: helvetica, sans-serif; font-size: 1.2em; }
+    .specialtext { font-style: italic; }
+  </style>
   <body>
-    
+    <h1 class="specialtext">This is a heading with the <span>same class</span> as the second paragraph.</h1> 
+    <p>This tag has no class.</p>
+    <p class="specialtext">
+      When a tag has a class attribute, you can target it <span>regardless</span> of its position in the hierarchy.
+    </p>
   </body>
 </html>
