@@ -2,14 +2,21 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>3.1 理解盒子模型</title>
+    <title>3.1.2 盒子内边距</title>
     <style type="text/css">
       * { margin: 0; padding: 0; }
-      p.warning { border: solid #f33; }
-      p.warning { border-width: 4px 1px 1px 4px; }
+      p { width: 220px; border: 2px solid red;
+          font: 16px helvetica, arial, sans-serif;  
+          background-color: #caebff;
+        }
+      p { padding: 16px; }
     </style>
   </head>
   <body>
-    <p class="warning">Important Warning!</p>   
+    <p> 
+      Here is a short paragraph of text.Without any padding, the text can touch the
+      border on all four sides, which gives the layout a very crowed appearance. It's
+      not something you really want to read.
+    </p>
   </body>
 </html>
