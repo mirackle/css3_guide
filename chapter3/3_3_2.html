@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.3.2 围住浮动元素的三种方法</title>
+  <style type="text/css">
+    section { border: 1px solid blue; margin: 0 0 10px 0; }
+    /* section { overflow: hidden;}  1-为父类添加overflow:hidden*/
+    /*
+    section { float: left; width: 100%; }
+    footer { clear: left;}
+    2-同时浮动父元素
+    */
+    p { margin: 0; }
+    footer { border: 1px solid red;  }
+    img { float: left;}
+
+    /*
+    .clear-me { clear: left; }
+    3-父元素添加一个非浮动,没有默认样式,不会引入多余空间的div元素
+    */
+    .clear-fix:after {
+      content: "这添加的是神马.";
+      clear: both;
+      height: 0;
+      visibility: hidden;
+      display: block;
+    }
+    /* 3-让父元素包住最后一个子元素,可以用after伪类,也可以直接在最后面加div */
+
+    p.age::before { content: "Age: "; color: red; }
+    p.age::after  { content: " years"; color: blue; }
+
+  </style>
+</head>
+<body>
+  <section class="clear-fix">
+    <img style="width: 100px; height: 90px;" src="pl.jpg">
+    <p>It's fun to float.</p>
+  </section>
+
+  <section>
+    <img style="width: 100px; height: 90px;" src="pl.jpg">
+    <p>It's fun to float.</p>
+    <div style="clear: left"></div>
+  </section>
+  <footer>
+    Here is the footer element that runs across that runs 
+    across the bottom of the page.
+  </footer>
+  <p class="age">25</p>
+</body>
+</html>

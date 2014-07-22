@@ -2,3 +2,13 @@
                  添加border, padding, margin,会导致内容宽度减少 
 2 盒子模型结论二: 设置宽度的元素,width指内容区域的宽度.
                  添加border, padding, margin,会使盒子模型扩展
+3 伪元素, 不需要html的硬编码
+  .clear-fix:after {
+    content: ".";
+    clear: both;
+    visibility: hidden;
+    height:0;
+    display:block;
+  }
+4 clear: both。就是说，设置此属性的元素左右都不能有浮动元素.
+  浮动元素是否挨到"我"，"我"是肯定知道的，不然怎么会对应空间的内容腾给它
