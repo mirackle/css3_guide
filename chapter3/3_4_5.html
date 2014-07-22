@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+    <title>定位上下文</title>
+    <style type="text/css">
+      div#outer { position: relative; width: 250px; height: 300px; margin: 150px 40px; border-top: 3px solid red; }
+      div#inner { position: absolute; top: 10px; left: 20px; background: #ccc; }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="inner">
+        This is text for a paragraph to demonstrate contextual positioning. 
+        Herae are two divs, one nested in the other. The outer div has a 
+        red top border and the inner div has a gray backgtound. Both elements
+        hava default static positioning.
+      </div>
+    </div> 
+  </body>
+</html>
