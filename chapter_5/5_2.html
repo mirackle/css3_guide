@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.2 三栏-固定宽度布局</title>
+  <style type="text/css"> 
+    * { margin: 0; padding: 0; }
+    #wrapper                { width: 960px; margin: auto; border: 1px solid green; background: #666; }
+    #wrapper header         { margin: 5px 5px; font: bold 4em serif; background: #e00; }
+    
+    #content:after          { content: "."; display: block; visibility: hidden; clear: both; height: 0; }
+    #content * .inner         { margin: 10px; padding: 10px; border: 1px solid #123; }  
+    #content article        { float: left; width: 60%; background: #ffed53; }
+    #content article h1     { margin: 0 0 .2em 0; }
+    #content article hr     { width: 25em;  margin: 1em 0 0 0 ; }
+    #content nav            { float: left; width: 20%;  background: #caebff;}
+    #content nav li         { list-style-type: none; }
+    #content aside          { float: left; width: 20%; background: #3f7ccf; }
+    #content aside h4       { margin: 0 0 .2em 0; }
+    
+    #wrapper footer         { margin: 5px 5px; text-align: center; background: #e00; }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header> A Fixed-Width Layout </header>
+    <div id="content">
+      <nav>
+        <div class="inner">
+          <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+          </ul>
+        </div>
+      </nav>
+      <article>
+        <div class="inner">
+          <h1>Single-Column Layout</h1>
+          <p>
+            Lorem ipsum dolro sit ament, consctuur adipoicing elit. Aliquan eleifend libero et a curse 
+            fls garviad.Etian ultricsns trisquied tell u, uvlipuateta emsumode nequee elementuan ac.
+            Integer at neque in margina locaina bibenadium sit amet si amet dolor. Nam comaequant dul
+            erol, sed bubeudn metus fuacibus it amet. Sed convailis a cccumsan dui. enu doles odio 
+            mollis nec. Cuurabuitur in munc se leo tempor lucutn in a dollors. Sed sit amet falcilst.
+            Doner selcequee consecturse weliit. viate biblenag mjaurse ruanrtanquis
+          </p>
+          <hr />
+          <h1>This is a Second-level Heading</h1>
+          <p>
+            Phasellus prtium givida internudm. Nam itneduma possere temput. Ut commmodoa laor ret dolor,
+            non henderetn mi divum vitea.Nam cec eggesata libero.Quiquit sodaless toror ut tortor egeats
+            eu adipicsing enuim pellenteasuqe.Cras condingmkusntg ellts sus saor morgpiasng Name.Padtadi
+            anat , adhadqp pkahd int eqegafga.
+          </p>
+          <hr />
+          <h1>This is a Third-level Heading</h1>
+          <p>
+            Sed convailis a cccumsan dui. enu doles odio mollis nec. Cuurabuitur in munc se leo tempor
+            lucutn in a dollors.Nam cec eggesata libero.Quiquit sodaless toror ut tortor egeats Name.
+            Adipicsing enuim pellenteasuqe.neque in margina locaina bibenadium sit amet si amet dolor.
+            Nam comaequant dul erol, sed bubeudn metus fuacibus
+          </p>
+        </div>
+      </article>
+      <aside>
+        <div class="inner">
+          <h4>This is the Sidebar</h2> 
+          <p>
+            Integer at neque in magna lacinia bilndum sit amet set amet dolrol.
+            Nam comsequat ullamcoprper erors, sed bibendum metus faucibus sit amet.
+            Lorem ipsum dolor sit amet, consecetur adipicing elit. 
+          </p>
+        </div>
+      </aside>
+    </div>
+    <footer> Coyperight: miral </footer>
+  </div>
+</body>
+</html>
