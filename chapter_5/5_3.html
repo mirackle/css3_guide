@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.3 三栏-中栏流动布局</title>
+  <style type="text/css">
+    div#main-wrapper               { min-width: 600px; max-width: 1100px; margin: 0 auto; font: 1em arial, sans-serif; background: #3f7ccf;} 
+
+    div#main-wrapper > header      { font: 3em sans-serif; background: #3f7ccf; }
+    div#main-wrapper > footer      { color: #fff; clear: both; width: 100%; text-align: center; background: #000;}
+    div#threecolwrap               { float: left; width: 100%; background: #777; } 
+    div#threecolwrap > aside       { float: left; width: 210px; padding: 20px 0; background: #ffed53; } /* 用图片在main-wrapper做相同颜色的背景图片,右侧垂直拼接.背景图片会覆盖背景色*/
+    div#threecolwrap > aside *     { margin: 0 10px; }
+    div#twocolwrap                 { float: left; width: 100%; margin-right: -210px; }
+    div#twocolwrap   > nav         { float: left; width: 160px; padding: 20px 0; background: #777;}
+    div#twocolwrap   > nav *       { margin: 0 10px; }
+    div#twocolwrap   > article     { margin-left: 160px; margin-right: 210px; background: #eee; padding: 20px 0;}
+    div#twocolwrap   > article *   { margin:0 10px; }
+  </style>
+</head>
+<body>
+  <div id="main-wrapper">
+    <header>A Three-Column Fluid Center Layout</header>
+    <div id="threecolwrap">
+      <div id="twocolwrap">
+        <nav>
+          <ul>
+            <li>Nav Link 1</li>
+            <li>Nav Link 2</li>
+          </ul>
+        </nav>
+        <article>
+          <h4>About This Layout</h4>
+          <p>This page is styled with CSS.THis layout uses negative margins to create this feature-rich layout.</p>
+          <h4>Key Features</h4>
+          <p>Resize this page to see the following:</p>
+          <ol>
+            <li>The center content column changes width as you change the brower width</li>
+            <li>
+              The <strong>min-width</strong> setting prevents hte content being crushed down to nothing;
+              once hte content reaches minimum width, the layout gets no narrower.
+            </li>
+            <li>
+              The <strong>max-width</strong> setting prevents hte content getting too wide;once it reaches 
+              maximum width, the layout gets no wider and the auto margins center the layout in brower window.
+            </li>
+            <li>The footer sits below whichever column is longest.</li>
+          </ol>
+        </article>
+      </div>
+      <aside>
+        <h4>Sidebar Area</h4>
+        <p>
+          This column has a negative margin applied to it to draw it inside of the full width content div.
+          A positive margin on the content div cnsures there will be room for it.
+        </p>
+      </aside>
+    </div>
+    <footer>A CSS template from Stylin with CSS.Third Edition by Charles Wyke Smith</footer>
+  </div>
+</body>
+</html>
