@@ -1,1 +1,7 @@
 1 box-sizing 不靠谱, 还是用div设置表现形式靠谱
+2 谨记：添加最少的ID和类
+3 通过上下文选择符来精确的选择任意元素
+4 margin没有背景颜色,是透明的；它的作用是清除元素周围空间;可以是负值，重叠内容
+5 行内元素不会填充满容器.如div img：img是行内元素，此时img在div底部是有空隙的. div img { display: block;} 可以解决
+6 多栏布局，最好用的是display:table-cell；可是IE7以下是不支持的
+7 table-cell 的 margin不管用.
