@@ -1,0 +1,36 @@
+form.form                               { width: 20em; margin: 20px auto; border:1px solid #bbb7ae; padding: .5em .5em .15em; }
+form.form h3                            { margin: 0; padding: 0 0 .2em .2em; font-weight: 600; color: #bbb7ae; }
+form.form fieldset                      { margin: 0; padding: 0 0 .2em 0; width: 100%; border: 0; }
+form.form legend                        { width: 100%; padding: .3em 0; background: #bbb7ae; }
+form.form legend span                   { display: block; font-size: 1em; line-height: 1.1em; padding: 0 0 0 .4em; font-weight: 700; color: #fff;}
+form.form section                       { overflow: hidden; padding: .2em 0 .4em 0; border-bottom: 8px solid #e7e5df; }
+form.form section:last-child            { border-bottom: none; }
+form.form section label,          
+form.form section h4                    { display: block; clear:both; margin: .3em .3em 0 0; padding-bottom: .8em; font-family: 'Droid sans'; font-weight: 400; line-height: 1.1; }
+form.form section label span            { font-size: .75em; vertical-align: text-top; color: #f00; }
+form.form section p.note                { font-size: .7em; color: #f00; margin: 0; padding: 0 0 .3em 0; }
+form.form section select                { margin: .2em .5em .2em 0; padding: .2em .4em; color: #000; box-shadow: 1px 1px 3px #ccc; outline: none;}
+form.form section textarea              { width: 12em; border:1px solid #bbb7ae; border-radius: 3px; height: 5em; margin-top: .3em; line-height: 1.1;}
+form.form section p                     { margin: .3em .75em 0; clear:both; font-size: .7em; line-height: 1.1; color: #000; }
+form.form section p.error               { color: #f00; }
+form.form section section               { overflow: hidden; margin: .2em 0 .3em .4em; padding: 0 0 .1em 0; border-bottom: none; }
+form.form section section input         { float: left; clear: both; margin: .1em 0 0 .3me; } 
+form.form section section label         { float: left; clear: none; width: 15em; margin: .15em 0 0 .6em; font-weight: normal; font-size: .7em; line-height: 1.2; } 
+form.form section select                { margin-left: .4em; font-size: .85em; }
+form.form section input[type='submit']  { width: auto; margin: .4em .3em 0 0; font-size: 1em; font-weight: 800; color: #fff; background: #bbb7ae; cursor: pointer;}
+form.form > section:last-child          { text-align: center;}
+
+form.form.labels-left                                 { width: 25em; }
+form.form.labels-left label,                        
+form.form.labels-left h4                              { float: left; width: 8em; }  
+form.form.labels-left p                               { margin: 0 0 0 9.35em; padding: .3em 0 0 0; clear: both; }
+form.form.labels-left p.note                          { margin: 0 0 .2em 0; }
+form.form.labels-left section section                 { width: 10em; margin-left: 8.5em; padding-top: 0; }
+form.form.labels-left section section input           { width: 1.25em; margin-left: 0; }
+form.form.labels-left section input,          
+form.form.labels-left section textarea,         
+form.form.labels-left section select                  { float: left; width: 12em; margin-left: .2em; }
+form.form.labels-left > section input[type='submit']  { float: none; }
+
+
+
