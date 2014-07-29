@@ -31,6 +31,3 @@ form.form.labels-left section input,
 form.form.labels-left section textarea,         
 form.form.labels-left section select                  { float: left; width: 12em; margin-left: .2em; }
 form.form.labels-left > section input[type='submit']  { float: none; }
-
-
-
