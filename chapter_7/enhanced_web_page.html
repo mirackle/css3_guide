@@ -14,7 +14,10 @@
     </section>
     <nav class="menu">
       <ul>
-        <li class="choice1"><a href="#">Articles</a></li>
+        <li class="choice1">
+          <a href="#">Articles</a>
+          <ul></ul>
+        </li>
         <li class="choice2"><a href="#">Books</a></li>
         <li class="choice3"><a href="#">Resources</a></li>
         <li class="choice4"><a href="#">Bookshelf</a></li>
@@ -22,16 +25,73 @@
       </ul>
     </nav>
     <form class="search" action="#" method="post">
-      <label for="userName">search</label>
       <input type="text" id="userName" name="userName" placeholder="search">
     </form>
   </header>
-  <section id="feature-area">
-    <article id="blog-leadoff"></article>
-    <aside>
-      <form></form>
-      <nav></nav>
-    </aside>
+  <section id="feature">
+    <div class="blog">
+      <article>
+        <h6>May 31, 2013</h6>
+        <h2><a href="#">Doing More with Less</a></h2>
+        <img src="rabbit.png">  
+        <p>
+          Writing CSS in less enables you to write CSS that is more
+          concise, faster to write and far easier to understand when 
+          you revisit it. The primary benefit is that Less lets you nest
+          your CSS rules inside one another the same way as HTML tags 
+          are nested, so the relationship between the HTML markup and the 
+          CSS that styles it is much clearer, but there are many others, 
+          and this article looks at some of the most useful advantages 
+          that Less offers.<a href="#">Read Article</a>
+        </article>
+      <article>
+        <h6>February 11, 2013</h6>
+        <h2><a href="#">Make External Links Open In New Windows</a></h2>
+        <p>
+          Discover how to use jQuery to differentiate between internal and
+          external links and open external links in their own windows. I 
+          also show how also adding a class allows you to invoke some simple 
+          CSS to display a text hint after the link using the ::after pseudo-
+          element, and any other stylings you might want to add to the links 
+          that point at pages on other sites. <a href="#">Read Article</a>
+        </p>
+      </article>
+    </div>
+    <div class="func">
+      <aside>
+        <form>
+          <h2>Sign In for Code and Updates</h2>
+          <label>Email</label>
+          <input type="text" name="email">
+          <input type="submit" name="submit">
+          <p>Not signed up? <a href="#">Register now!</a></p>
+        </form>
+        <nav></nav>
+      </aside>
+      <aside>
+        <form>
+          <h2>Sign In for Code and Updates</h2>
+          <label>Email</label>
+          <input type="text" name="email">
+          <input type="submit" name="submit">
+          <p>Not signed up? <a href="#">Register now!</a></p>
+           <p>Not signed up? <a href="#">Register now!</a></p>
+            <p>Not signed up? <a href="#">Register now!</a></p>
+             <p>Not signed up? <a href="#">Register now!</a></p>
+        </form>
+        <nav></nav>
+      </aside>
+      <aside>
+        <form>
+          <h2>Sign In for Code and Updates</h2>
+          <label>Email</label>
+          <input type="text" name="email">
+          <input type="submit" name="submit">
+          <p>Not signed up? <a href="#">Register now!</a></p>
+        </form>
+        <nav></nav>
+      </aside>
+    </div>
   </section>
   <section id="promo-area">
     <article>

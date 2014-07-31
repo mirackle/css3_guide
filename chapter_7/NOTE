@@ -1,1 +1,4 @@
 1 布局的时候，要考虑元素语义。语义能提供一种明确的导航作用，而各种div就会让人摸不到头脑
+2 class后面添加伪元素,需要有空格;正常元素后面添加伪元素的时候,不能有空格
+  .func :first-child       
+  p:first-line, p:first-letter

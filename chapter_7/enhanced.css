@@ -1,14 +1,48 @@
-body { font-family: helvetica, arial, sans-serif; background: #efefef; margin: 0; }
-#wrapper { width: 980px; margin: 0 auto; }
+body { font-family: arial, sans-serif; background: #efefef; margin: 0; }
+#wrapper { position: relative; width: 980px; margin: 0 auto; }
+#wrapper header, section, footer { position: relative; }
 
-
+/* header处理*/
+header { overflow: hidden; margin: 10px auto; border-radius: 20px 0 20px 0; background: #fff; box-shadow: 0 10px 30px -10px #777; }
 header > nav,
-header > section,
-header > form { display: inline-block; }
-header > section h1 { color: #4eb8ea; margin: 0; }
-header > section h2 { font: .5em "runda", helvetica, sans-serif; margin: 0; }
-header > nav ul       { list-style-type: none; }
+header > section  { position: relative; float: left; }
+header > form     { position: relative; float: right;}
+header > nav      { width: 500px; padding: 10px 0 0 0; }
+header > section  { position: relative; left: 6px; padding: 10px; }
+header > section h1   { color: #4eb8ea; margin: 0; }
+header > section h2   { font: .5em "runda", helvetica, sans-serif; margin: 0; }
+header > nav ul       { float:left; list-style-type: none; }
 header > nav ul li    { float: left; }
-header > nav ul li a  { position: relative; text-decoration:none; color:#fff; padding: 2px; width: 20%;} 
-header > nav ul li:first-child a { border-top-left-radius: 10px; }
-header > nav ul li.choice1 a { background: #f58c21; }
+header > nav ul li a  { position: relative; text-decoration:none; color:#fff; padding: 4px 10px; width: 20%; } 
+header > nav ul li:first-child a  { border-radius: 10px 0 0 0; }
+header > nav ul li:last-child a   { border-radius: 0 0 10px 0; }
+header > nav ul li.choice1 a      { background: #f58c21; }
+header > nav ul li.choice2 a      { background: #4eb8ea; }  
+header > nav ul li.choice3 a      { background: #d6e636; }  
+header > nav ul li.choice4 a      { background: #ee4c98; }
+header > nav ul li.choice5 a      { background: #f58c21; }
+header > form             { width: 150px; margin: 22px 10px; }
+header > form input       { float: right; position: relative; width: 60px; height: 20px; border-radius: 10px 0 10px 0; outline: none;}
+header > form input:focus { width: 120px; -webkit-transition:2s width; }
+
+
+/* feature 处理*/
+section#feature .blog, 
+                .func aside { padding: 10px; border-radius: 20px 0 20px 0; background: #fff; box-shadow: 0 10px 30px -10px #666; }
+section#feature .blog       { position: relative; float: left; width: 630px; }
+section#feature .func       { position: relative; float: right; width: 300px; }
+
+section#feature .blog article       { margin: 12px; }
+section#feature .blog article h6    { margin: 5px 0; font-size: .9em; color: #f58c21; }
+section#feature .blog article h2    { margin: 5px 0; font-size: 1.7em; color: #616161; clear: both; }
+section#feature .blog article h2 a  { text-decoration: none; color: #888; }
+section#feature .blog article img   { float: left; width: 90px; height: 100px; margin: 10px 10px 5px 0; }
+section#feature .blog article img + p:first-line    { font-variant: small-caps; }
+section#feature .blog article img + p:first-letter  { float: left; font-family: times, serif; font-size: 4.5em; padding: 10px 0 0 0; line-height: .6; text-shadow: 2px 3px 3px #ccc; }
+section#feature .blog article p a                   { font-weight: bold; text-decoration: none; color: #4eb8ea; }
+section#feature .blog article p a:hover             { color: #778; }
+
+section#feature .func :first-child { margin: 0; }
+section#feature .func aside { margin: 10px 0 0 0 ; }
+
+
