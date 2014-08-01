@@ -2,3 +2,6 @@
 2 class后面添加伪元素,需要有空格;正常元素后面添加伪元素的时候,不能有空格
   .func :first-child       
   p:first-line, p:first-letter
+3 下拉菜单的处理过程中，重复体现了relative和absolute的区别。
+   父元素会保留relative子元素的填充样式，而不会保留absolute子元素的填充样式
+4 * { margin: 0; padding: 0; } ,免除内置样式的烦恼
