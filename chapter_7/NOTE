@@ -5,3 +5,8 @@
 3 下拉菜单的处理过程中，重复体现了relative和absolute的区别。
    父元素会保留relative子元素的填充样式，而不会保留absolute子元素的填充样式
 4 * { margin: 0; padding: 0; } ,免除内置样式的烦恼
+5 伪元素设置样式,也要伪元素指定在去除样式
+  'li:first-child a' 设置了的最开始导航栏的样式,但是子元素会继承次样式，为了去除样式，需要'li li:first-child a' 选择子元素去除
+  如果使用'li li a ' 则不会去除继承元素.
+  伪元素,有类似javascript类似的控制样式的功能
+6 用text-align: center 实现水平居中对齐.子元素dislay:inline-block
